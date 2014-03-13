@@ -6,7 +6,8 @@ It’s typically used for web development with Ruby On Rails, Sinatra, or Jekyll
 Ruby comes pre-installed on both Mac and Linux, but it’s likely that you’ll need
 to upgrade to a newer version of the language than what you already have.
 
-Before you begin, ensure that you have prepared [build tools](Build-Tools.md).
+Before you begin, ensure that you have prepared [build tools](Build-Tools.md)
+with [Homebrew](Build-Tools.md#homebrew).
 
 RVM
 ---
