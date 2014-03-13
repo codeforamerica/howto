@@ -5,7 +5,7 @@ Placeholder repository for possible future guides to foundational tech tasks for
 
 The guides here serve two purposes:
 
-1. Code for America software documentation should link here for common tasks like running setting up a dev environment or framework. There’s no reason for everyone to re-write basic shared tasks when we can have tightly-edited, central collection of the most common tasks.
+1. Code for America software documentation *should link here for common tasks* like setting up a dev environment or framework. We prefer a tightly-edited, central collection of the most common tasks to everyone re-writing their own versions.
 2. Guides here should be normative, describing the simplest, lowest-friction ways of getting common things done. If your app or library doesn’t work with the directions here, consider whether you can *modify it so that it does* rather than making a change to a guide.
 
 Current Guides
