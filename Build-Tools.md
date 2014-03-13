@@ -36,7 +36,8 @@ Install [XCode](https://developer.apple.com/xcode/) from the Mac App Store.
 
 ### 10.7, 10.6 (Lion & Snow Leopard)
 
-Install [OSX GCC Installer](https://github.com/kennethreitz/osx-gcc-installer#readme).
+XCode currently requires OS X 10.8.4 or higher. Install GCC & Make alone with
+[OSX GCC Installer](https://github.com/kennethreitz/osx-gcc-installer#readme).
 
 
 ### Homebrew
