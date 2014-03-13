@@ -18,29 +18,44 @@ originators of the legal and technical basis
 of free and open source software.
 
 
-Ubuntu
-------
+Linux (Ubuntu or Debian)
+-----
 
-Install http://packages.ubuntu.com/precise/build-essential
+Install [build-essential](http://packages.ubuntu.com/precise/build-essential):
 
     $ sudo apt-get install build-essential
 
 
-Mac OS 10.9, 10.8 (Mavericks & Mountain Lion)
------------------
+Mac OS
+------
 
-Install XCode from the Mac App Store.
+### 10.9, 10.8 (Mavericks & Mountain Lion)
 
-Install [Homebrew](http://brew.sh/#install):
-
-    $ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+Install [XCode](https://developer.apple.com/xcode/) from the Mac App Store.
 
 
-Mac OS 10.7, 10.6 (Lion & Snow Leopard)
------------------
+### 10.7, 10.6 (Lion & Snow Leopard)
 
 Install [OSX GCC Installer](https://github.com/kennethreitz/osx-gcc-installer#readme).
 
-Install [Homebrew](http://brew.sh/#install):
 
-    $ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+### Homebrew
+
+Homebrew is a package manager for OS X that allows for the installation of
+command line utilities and other software. It is analogous to
+[Ubuntu & Debian’s Apt](http://en.wikipedia.org/wiki/Advanced_Packaging_Tool).
+
+To install Homebrew, follow directions given at [brew.sh](http://brew.sh/#install):
+
+> Install Homebrew
+> 
+>     $ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+> 
+> Paste that at a Terminal prompt.
+> 
+> The script explains what it will do and then pauses before it does it.
+> There are more installation options [here](https://github.com/Homebrew/homebrew/wiki/Installation)
+> (needed on 10.5).
+
+After initial installation, check Homebrew’s output for additional instructions.
+For example, you may be asked to run `brew doctor` to ready Homebrew for use.
