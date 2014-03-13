@@ -17,6 +17,11 @@ by the [GNU Project](https://www.gnu.org) and
 originators of the legal and technical basis
 of free and open source software.
 
+You might already have them installed, here’s how to check:
+
+    $ make --version
+    $ gcc --version
+
 
 Linux (Ubuntu or Debian)
 -----
