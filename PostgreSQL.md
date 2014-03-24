@@ -38,11 +38,16 @@ The new database will be available to your application. If your application requ
 
 ### Mac
 
-With Postgres.app, these commands will be located in a directory named `/Applications/Postgres.app/Contents/Versions/9.3/bin` (or similar, depending on the version number):
+With Postgres.app, these commands will be located in a directory named `/Applications/Postgres.app/Contents/Versions/9.3/bin` (or similar, depending on the version number).
 
-    $ /Applications/Postgres.app/Contents/Versions/9.3/bin/createuser -P janedoe
-    $ /Applications/Postgres.app/Contents/Versions/9.3/bin/createdb -O janedoe doedb
-    $ /Applications/Postgres.app/Contents/Versions/9.3/bin/psql -h 127.0.0.1 -U janedoe doedb
+You can connect to PostgreSQL easily using the Postgres.app elephant menu:
+
+![Screen capture of Postgres.app elephant menu](images/Postgres.app.jpg)
+
+Then user [create user](http://www.postgresql.org/docs/9.0/static/sql-createuser.html) and [create database](http://www.postgresql.org/docs/9.0/static/sql-createdatabase.html) to generate the user:
+
+    # CREATE USER janedoe PASSWORD 'pass';
+    # CREATE DATABASE doedb OWNER=janedoe;
 
 ### Linux
 
