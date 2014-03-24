@@ -21,4 +21,4 @@ Future Guides
 
 Suggest new guides in the [codeforamerica/howto Github repository](https://github.com/codeforamerica/howto).
 
-![Write code. Not too much. Mostly procedural.](write-code-lg.png)
+![Write code. Not too much. Mostly procedural.](images/write-code-lg.png)
