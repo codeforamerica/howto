@@ -34,19 +34,23 @@ After Installation
 
 With PostgreSQL installed, you may want to create a new database for your project, and a user who can connect to that database. PostgreSQL provides the commands `createuser` and `createdb` for this purpose; `psql` is the command line client. To create a user named “janedoe” who owns the database “doedb” and connect as that user, follow these instructions.
 
-With Postgres.app on a Mac, these commands will be located in a directory named `/Applications/Postgres.app/Contents/Versions/9.3/bin` (or similar, depending on the version number).
+The new database will be available to your application. If your application requires a database URL, it will look something like *postgres://janedoe:password@127.0.0.1/doedb*.
+
+### Mac
+
+With Postgres.app, these commands will be located in a directory named `/Applications/Postgres.app/Contents/Versions/9.3/bin` (or similar, depending on the version number):
 
     $ /Applications/Postgres.app/Contents/Versions/9.3/bin/createuser -P janedoe
     $ /Applications/Postgres.app/Contents/Versions/9.3/bin/createdb -O janedoe doedb
     $ /Applications/Postgres.app/Contents/Versions/9.3/bin/psql -h 127.0.0.1 -U janedoe doedb
+
+### Linux
 
 On Linux, the commands will be available globally, but the creation of the new user will need to be done by `postgres`, the owner the PostgreSQL installation:
 
     $ sudo -u postgres createuser -P janedoe
     $ sudo -u postgres createdb -O janedoe doedb
     $ psql -h 127.0.0.1 -U janedoe doedb
-
-The new database will be available to your application. If your application requires a database URL, it will look something like *postgres://janedoe:password@127.0.0.1/doedb*.
 
 AYGNI?
 ----
