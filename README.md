@@ -13,6 +13,7 @@ Current Guides
 
 * [Python Virtualenv](Python-Virtualenv.md), an isolated working copy of Python which allows you to work on a specific project without worry of affecting other projects.
 * [Ruby](Ruby.md), for the Ruby programming language and its version manager to install, manage, and work with multiple ruby environments.
+* [Node.js](Node.js.md), for the Node server-side Javascript framework.
 * [Local PostgreSQL](PostgreSQL.md), for local installation of the open source object-relational database system.
 * [Build Tools](Build-Tools.md), for core software development tools Make and GCC needed by many downstream libraries and installation processes.
 
