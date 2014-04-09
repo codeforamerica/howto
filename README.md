@@ -15,6 +15,7 @@ Current Guides
 * [Ruby](Ruby.md), for the Ruby programming language and its version manager to install, manage, and work with multiple ruby environments.
 * [Node.js](Node.js.md), for the Node server-side Javascript framework.
 * [Local PostgreSQL](PostgreSQL.md), for local installation of the open source object-relational database system.
+* [Jekyll](Jekyll.rb), a static website builder that runs Github Pages.
 * [Build Tools](Build-Tools.md), for core software development tools Make and GCC needed by many downstream libraries and installation processes.
 
 Future Guides
