@@ -45,4 +45,4 @@ $ npm test
 ```
 
 ## `package.json` & configuration
-`package.json` has lots of fun stuff for your project. All of the fields are optional. A great resourcce for exploring what fields are available is [package.json.nodejitsu.com/](http://package.json.nodejitsu.com/)
+`package.json` has lots of fun stuff for your project. All of the fields are optional. A great resource for exploring what fields are available is [package.json.nodejitsu.com/](http://package.json.nodejitsu.com/)
