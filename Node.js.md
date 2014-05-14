@@ -2,7 +2,7 @@
 Node.js (often simply called `node`) is a general purpose programming environment built on top of Google's V8 JavaScript engine.
 
 ## Install
-Download the installer for your system from [http://nodejs.org/download/](http://nodejs.org/download/)
+Download and run the installer for your system from [http://nodejs.org/download/](http://nodejs.org/download/)
 
 You now have `node` and `npm` installed in your `$PATH`.
 
