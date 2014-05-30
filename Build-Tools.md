@@ -10,7 +10,7 @@ is a compiler system produced by the GNU Project supporting
 various programming languages.
 
 These tools are not used directly in normal web development,
-but other tools in the Python, Ruby, and other languages rely
+but other tools in Python, Ruby, and other languages rely
 on them to work. Both GCC and Make are developed and maintained
 by the [GNU Project](https://www.gnu.org) and
 [Free Software Foundation](http://www.fsf.org),
@@ -31,17 +31,28 @@ Install [build-essential](http://packages.ubuntu.com/precise/build-essential):
     $ sudo apt-get install build-essential
 
 
-Mac OS
-------
+Mac OS X
+--------
 
-### 10.9, 10.8 (Mavericks & Mountain Lion)
+### 10.9 (Mavericks)
 
-Install [XCode](https://developer.apple.com/xcode/) from the Mac App Store.
+Install the standalone Command Line Tools by running this command from the Terminal:
 
+    $ xcode-select --install
 
-### 10.7, 10.6 (Lion & Snow Leopard)
+For more details, and step-by-step instructions
+with screenshots, visit [Moncef Belyamani's tutorial](http://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/#step-1).
 
-XCode currently requires OS X 10.8.4 or higher. Install GCC & Make alone with
+### 10.8, 10.7 (Mountain Lion & Lion)
+
+Install the standalone Command Line Tools from the [Apple Developer](https://developer.apple.com/downloads/) portal.
+
+For more details, and step-by-step instructions
+with screenshots, visit [Moncef Belyamani's tutorial](http://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/#clt-ml).
+
+### 10.6 (Snow Leopard)
+
+Install GCC and Make alone with
 [OSX GCC Installer](https://github.com/kennethreitz/osx-gcc-installer#readme).
 
 
@@ -64,4 +75,6 @@ To install Homebrew, follow directions given at [brew.sh](http://brew.sh/#instal
 > (needed on 10.5).
 
 After initial installation, check Homebrew’s output for additional instructions.
-For example, you may be asked to run `brew doctor` to ready Homebrew for use.
+Before you install anything with Homebrew, run `brew doctor` to make sure your system is ready
+to brew. If `brew doctor` reports any errors or warnings, read Moncef Belyamani's tutorial for helpful
+[troubleshooting tips](http://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/#troubleshoot-homebrew).
