@@ -33,8 +33,9 @@ After initial installation, check RVM’s output for additional instructions, e.
 > in all your open shell windows, in rare cases you need to reopen all shell windows.
 
 To significantly speed up the installation of any Ruby gems you might be installing 
-(such as Rails), set a global configuration that prevents the documentation from being 
-downloaded along with each gem:
+(such as Rails), skip downloading of documentation for each gem by adding a global
+[no-document](http://guides.rubygems.org/command-reference/#installupdate-options)
+configuration to the [.gemrc file](http://guides.rubygems.org/command-reference/#description-6):
 
     $ echo "gem: --no-document" >> ~/.gemrc
 
