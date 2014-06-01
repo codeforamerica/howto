@@ -32,6 +32,11 @@ After initial installation, check RVM’s output for additional instructions, e.
 > To start using RVM you need to run `source /home/nobody/.rvm/scripts/rvm`
 > in all your open shell windows, in rare cases you need to reopen all shell windows.
 
+To significantly speed up the installation of any Ruby gems you might be installing 
+(such as Rails), set a global configuration that prevents the documentation from being 
+downloaded along with each gem:
+
+    $ echo "gem: --no-document" >> ~/.gemrc
 
 Ruby
 ----
