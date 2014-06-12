@@ -45,3 +45,14 @@ Activate the environment.
  * `$ source venv-project-name/bin/activate.csh` (if you use the csh or tcsh)
 
 Now `which pip` should confirm that your pip executable is located under *venv-project-name*.
+
+When you're done working with your virtual environment, it is easy to get out.
+
+    $ deactivate
+
+Install Packages
+---
+
+If you are installing an existing project, look for a [requirements.txt](http://www.pip-installer.org/en/1.1/requirements.html) file containing names of packages required by the project. Ask Pip to install the list of packages.
+
+    $ pip install -r requirements.txt

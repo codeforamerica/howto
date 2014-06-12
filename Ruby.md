@@ -6,54 +6,44 @@ It’s typically used for web development with Ruby On Rails, Sinatra, or Jekyll
 Ruby comes pre-installed on both Mac and Linux, but it’s likely that you’ll need
 to upgrade to a newer version of the language than what you already have.
 
-Before you begin, ensure that you have prepared [build tools](Build-Tools.md)
-with [Homebrew](Build-Tools.md#homebrew).
+Before you begin, ensure that you have installed the [build tools](Build-Tools.md). 
+If you're on a Mac, ensure that you have also installed [Homebrew](Build-Tools.md#homebrew).
+Without Homebrew, RVM will attempt to install [Macports](http://www.macports.org).
+In most cases, Homebrew is a preferable Mac package manager.
 
 RVM
 ---
 
 [Ruby Version Manager](https://rvm.io) (RVM) is a command-line tool which allows
-you to easily install, manage, and work with multiple ruby environments from
+you to easily install, manage, and work with multiple Ruby environments, from
 interpreters to sets of gems. The Ruby language is under active development,
 and the version that ships with your operating system may be older than the 
 versions expected by current frameworks such as Rails. RVM helps bring your
 Ruby up to date.
 
-To install RVM, follow directions from [rvm.io](https://rvm.io):
+To install RVM with the latest version of Ruby:
 
-> Install RVM with a Ruby:
-> 
->     $ \curl -sSL https://get.rvm.io | bash -s stable
-> 
-> For all in one installation append `--rails` or `--ruby` or `--ruby=1.9.3`
-> 
-> For more details visit the [installation documentation](https://rvm.io/rvm/install/).
+    $ curl -L https://get.rvm.io | bash -s stable --autolibs=enabled --ruby
+ 
+For more details, visit the [installation documentation](https://github.com/wayneeseguin/rvm#installation).
 
 After initial installation, check RVM’s output for additional instructions, e.g.:
 
 > To start using RVM you need to run `source /home/nobody/.rvm/scripts/rvm`
 > in all your open shell windows, in rare cases you need to reopen all shell windows.
 
+To significantly speed up the installation of any Ruby gems you might be installing 
+(such as Rails), skip downloading of documentation for each gem by adding a global
+[no-document](http://guides.rubygems.org/command-reference/#installupdate-options)
+configuration to the [.gemrc file](http://guides.rubygems.org/command-reference/#description-6):
+
+    $ echo "gem: --no-document" >> ~/.gemrc
 
 Ruby
 ----
 
-### Homebrew (Mac)
-
-Without Homebrew, RVM will attempt to install [Macports](http://www.macports.org).
-In most cases, [Homebrew](http://brew.sh) is a preferable Mac package manager.
-To install Homebrew, follow directions given in [Build Tools](Build-Tools.md#homebrew).
-
-When you try to install a specific Ruby, you may encounter an OpenSSL conflict. More information
-[is available on Stack Overflow](http://stackoverflow.com/questions/21508866/openssl-rvm-brew-conflicting-error),
-with specific steps given to fix it:
-
-    $ brew reinstall openssl
-    $ brew link openssl --force
-
-
 ### Mac & Ubuntu
 
-To install a given version of Ruby, run `rvm install`, e.g.:
+To install a given version of Ruby, run `rvm install desired_version`, e.g.:
 
-    $ rvm install 2.0.0
+    $ rvm install 2.1.1
