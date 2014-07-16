@@ -43,3 +43,14 @@ Rails by default comes with Haml templating. Haml tends to add more overhead and
 Deploy to Heroku
 ----------------
 Heroku has a really good [guide](https://devcenter.heroku.com/articles/getting-started-with-rails4) to get your rails app deployed
+
+
+Just for Your Information
+-------------------------
+You can disable the asset pipeline when creating app via:
+    rails new myappname --skip-sprockets
+    
+Or, add in your `config/application.rb`:
+    config.assets.enabled = false
+
+You must use the asset pipeline when deploying to heroku.
