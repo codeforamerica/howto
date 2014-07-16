@@ -48,9 +48,11 @@ Heroku has a really good [guide](https://devcenter.heroku.com/articles/getting-s
 Just for Your Information
 -------------------------
 You can disable the asset pipeline when creating app via:
+
     rails new myappname --skip-sprockets
     
 Or, add in your `config/application.rb`:
+
     config.assets.enabled = false
 
 You must use the asset pipeline when deploying to heroku.
