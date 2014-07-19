@@ -34,17 +34,18 @@ Install Virtualenv tools.
 
     $ sudo pip install virtualenv
 
-Create a new virtualenv folder, in your local project directory.
+Change into your Python project directory (for example, “my-project”), then create a new virtualenv folder.
 
-    $ mkdir venv-project-name
-    $ virtualenv venv-project-name
+    $ cd my-project
+    $ mkdir venv-my-project
+    $ virtualenv venv-my-project
 
 Activate the environment.
 
- * `$ source venv-project-name/bin/activate` (if you use the bash shell)
- * `$ source venv-project-name/bin/activate.csh` (if you use the csh or tcsh)
+ * `$ source venv-my-project/bin/activate` (if you use the bash shell)
+ * `$ source venv-my-project/bin/activate.csh` (if you use the csh or tcsh)
 
-Now `which pip` should confirm that your pip executable is located under *venv-project-name*.
+Now `which pip` should confirm that your pip executable is located under *venv-my-project*. Your shell prompt might also be modified to include “my-project”.
 
 When you're done working with your virtual environment, it is easy to get out.
 
