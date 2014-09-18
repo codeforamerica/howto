@@ -5,7 +5,10 @@ Requirements Checklist:
 ----------------------
 
 1. The application has a build
-  - There is comprehensive test coverage that includes both [unit](http://www.extremeprogramming.org/rules/unittests.html) and [integration (also known as acceptance)](http://www.extremeprogramming.org/rules/functionaltests.html) level tests that **do not** hit the Internet. It is highly recommended to practice [Test Driven Development](http://www.extremeprogramming.org/rules/testfirst.html)
+  - There is comprehensive test coverage that includes both [unit](http://www.extremeprogramming.org/rules/unittests.html) and [integration (also known as acceptance)](http://www.extremeprogramming.org/rules/functionaltests.html) level tests that **do not** hit the Internet. It is highly recommended to practice [Test Driven Development](http://www.extremeprogramming.org/rules/testfirst.html). Here are some testing guides:
+    - [Ruby on Rails](http://guides.rubyonrails.org/testing.html)
+    - [Ruby with Sinatra](http://www.sinatrarb.com/testing.html)
+    - [Python](http://docs.python-guide.org/en/latest/writing/tests/)
   - The build is being run by a continuous integration platform. CfA currently uses [travis](http://www.travis-ci.org)
 
 2. The application is being monitored
