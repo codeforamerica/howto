@@ -66,7 +66,7 @@ To install Homebrew, follow directions given at [brew.sh](http://brew.sh/#instal
 
 > Install Homebrew
 > 
->     $ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+      $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 > 
 > Paste that at a Terminal prompt.
 > 
