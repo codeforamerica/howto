@@ -4,6 +4,8 @@ Jekyll
 [Jekyll](http://jekyllrb.com) is a popular [static site generator](http://staticsitegenerators.net).
 It helps you to convert plain and specially-structured files and templates into easily-deployable
 statically hosted websites. If you use [Github Pages](https://pages.github.com), you’re using Jekyll.
+Andrew Munsell’s [Jekyll By Example Tutorial](https://www.andrewmunsell.com/tutorials/jekyll-by-example/tutorial)
+is an excellent introduction to creating Jekyll websites.
 
 Install
 -------
