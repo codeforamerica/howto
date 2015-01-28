@@ -22,7 +22,7 @@ on the part _before_ the `#`.
 you the folder that you are currently working in. In other words, it asks
 "Where am I right now?". The "working directory" is also called the "current directory".
 
-![pwd command animation](http://web.mit.edu/bgolder/www/screengifs/pwd_command.gif)
+![pwd command animation](images/pwd.gif)
 
 ### `cd`
 
@@ -45,7 +45,7 @@ cd ../../.. # go up three folders
 cd - # go to the previous folder
 ```
 
-![cd command animation](http://web.mit.edu/bgolder/www/screengifs/cd_command.gif)
+![cd command animation](images/cd.gif)
 
 ### `ls`
 
@@ -63,7 +63,7 @@ ls -l -a # list contents in detail format, including hidden files
 ls -l -a ~ # list the contents of my home user directory, in detail, with hidden files
 ```
 
-![ls command animation](http://web.mit.edu/bgolder/www/screengifs/ls_command.gif)
+![ls command animation](images/ls.gif)
 
 ### `cat`
 
@@ -77,7 +77,7 @@ cat myfile.txt # print out the contents of `myfile.txt`
 cat Desktop/notes.txt # print out the contents of `notes.txt`, in the Desktop folder
 ```
 
-![cat command animation](http://web.mit.edu/bgolder/www/screengifs/cat_command.gif)
+![cat command animation](images/cat.gif)
 
 ### `mv`
 
