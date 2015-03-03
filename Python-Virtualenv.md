@@ -44,7 +44,7 @@ Activate the environment.
  * `$ source .venv/bin/activate` (if you use the bash shell)
  * `$ source .venv/bin/activate.csh` (if you use the csh or tcsh)
 
-Now `which pip` should confirm that your pip executable is located under `.venv`. Your shell prompt might also be modified to include “my-project”.
+Now `which python` should confirm that your python executable is located under `.venv`. Your shell prompt might also be modified to include “my-project”.
 
 When you're done working with your virtual environment, it is easy to get out.
 
