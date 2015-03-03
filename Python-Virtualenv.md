@@ -34,18 +34,17 @@ Install Virtualenv tools.
 
     $ sudo pip install virtualenv
 
-Change into your Python project directory (for example, “my-project”), then create a new virtualenv folder.
+Change into your Python project directory (for example, “my-project”), then create a new virtual environment. Naming it `.venv` will create a hidden folder to contain the necessary files in.
 
     $ cd my-project
-    $ mkdir venv-my-project
-    $ virtualenv venv-my-project
+    $ virtualenv .venv
 
 Activate the environment.
 
- * `$ source venv-my-project/bin/activate` (if you use the bash shell)
- * `$ source venv-my-project/bin/activate.csh` (if you use the csh or tcsh)
+ * `$ source .venv/bin/activate` (if you use the bash shell)
+ * `$ source .venv/bin/activate.csh` (if you use the csh or tcsh)
 
-Now `which pip` should confirm that your pip executable is located under *venv-my-project*. Your shell prompt might also be modified to include “my-project”.
+Now `which pip` should confirm that your pip executable is located under `.venv`. Your shell prompt might also be modified to include “my-project”.
 
 When you're done working with your virtual environment, it is easy to get out.
 
@@ -57,3 +56,29 @@ Install Packages
 If you are installing an existing project, look for a [requirements.txt](http://www.pip-installer.org/en/1.1/requirements.html) file containing names of packages required by the project. Ask Pip to install the list of packages.
 
     $ pip install -r requirements.txt
+
+Auto Activating the Virtual Environment
+---
+Taken from https://gist.github.com/codysoyland/2198913
+
+Add the following code to your .bashrc or .bash-profile
+When you cd into a folder with a virtual environment name `.venv` it will automatically activate.
+```
+#   The virtualenv will be activated automatically when you enter the directory.
+_virtualenv_auto_activate() {
+    if [ -e ".venv" ]; then
+        # Check to see if already activated to avoid redundant activating
+        if [ "$VIRTUAL_ENV" != "$(pwd -P)/.venv" ]; then
+            _VENV_NAME=$(basename `pwd`)
+            echo Activating virtualenv \"$_VENV_NAME\"...
+            VIRTUAL_ENV_DISABLE_PROMPT=1
+            source .venv/bin/activate
+            _OLD_VIRTUAL_PS1="$PS1"
+            PS1="($_VENV_NAME)$PS1"
+            export PS1
+        fi
+    fi
+}
+ 
+export PROMPT_COMMAND=_virtualenv_auto_activate
+```
