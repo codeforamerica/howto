@@ -1,6 +1,8 @@
 # Node.js
 Node.js (often simply called `node`) is a general purpose programming environment built on top of Google's V8 JavaScript engine.
 
+🚧 This guide is provided for historical purposes—new CfA projects should not use Node.js 🚧
+
 ## Install
 Download and run the installer for your system from [http://nodejs.org/download/](http://nodejs.org/download/)
 
