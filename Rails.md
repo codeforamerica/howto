@@ -9,21 +9,7 @@ Many Rails apps may have project-specific install instructions covered in their 
 
 First, follow the instructions in [Ruby.md](https://github.com/codeforamerica/howto/blob/master/Ruby.md) to install Ruby and RVM (the Ruby Version Manager).
 
-### 2. (Sometimes) Install the project-specific version of Ruby
-
-Some projects specify a version of Ruby that is required or recommended. You can find this by opening the `Gemfile` and looking for a line like:
-
-`ruby '2.1.5'`
-
-To install that version of Ruby with RVM, run:
-
-`rvm install 2.1.5`
-
-To switch the current Ruby version being used, use `rvm use`, like this:
-
-`rvm use 2.1.5`
-
-### 3. Install Ruby dependencies with bundler
+### 2. Install Ruby dependencies with bundler
 
 Run:
 
@@ -31,13 +17,13 @@ Run:
 
 to install the Ruby dependencies (called "gems") for the project, which are listed in the `Gemfile`.
 
-### 4. Database configuration
+### 3. Database configuration
 
 Most Rails applications will use SQLite or Postgres when in development mode. Apps using SQLite generally require no configuration.
 
 You can configure the application to use your local database credentials in the `config/database.yml` file.
 
-### 5. Database setup
+### 4. Database setup
 
 You can set up the database by running:
 
@@ -46,7 +32,7 @@ You can set up the database by running:
 (This actually runs three separate commands — `db:create`, `db:migrate`, and `db:seed` which gets your database all setup.)
 
 
-### 6. Running the app
+### 5. Running the app
 
 Lastly, you can run the app with:
 
