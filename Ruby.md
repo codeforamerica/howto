@@ -47,3 +47,7 @@ Ruby
 To install a given version of Ruby, run `rvm install desired_version`, e.g.:
 
     $ rvm install 2.1.1
+
+If a Ruby project requires a specific version of Ruby, it will be described in the `Gemfile` with a line such as `ruby '2.1.1'`.
+
+You can view all your installed versions of Ruby with `rvm list` and switch to using a different version with, for example, `rvm use 2.1.1`.

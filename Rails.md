@@ -1,58 +1,49 @@
 Ruby on Rails
 =============
 
-From [rubyonrails.org](https://rubyonrails.org): Ruby on Rails is an open-source web framework that's optimized for programmer happiness and sustainable productivity. It lets you write beautiful code by favoring convention over configuration.
+[Ruby on Rails](https://rubyonrails.org) is an open-source web framework that's optimized for programmer happiness and sustainable productivity.
 
-Install
--------
+Many Rails apps may have project-specific install instructions covered in their README, but this guide covers the general steps needed for most Rails apps, and gives context for those steps.
 
-Since you've followed the install instructions in [Ruby.md](https://github.com/codeforamerica/howto/blob/master/Ruby.md), you will have rubygems installed.
+### 1. Follow the Ruby howto
 
-Use rubygems to install rails:
+First, follow the instructions in [Ruby.md](Ruby.md) to install Ruby and RVM (the Ruby Version Manager).
 
-    $ gem install rails
+### 2. Install Ruby dependencies with bundler
 
+Run:
 
-Create Project
---------------
+    bundle install
 
-    $ rails new path/to/your/new/application
-    $ cd path/to/your/new/application
-    $ rails server
+to install the Ruby dependencies (called "gems") for the project, which are listed in the `Gemfile`.
 
-Your project is available at: [http://localhost:3000](http://localhost:3000)
+### 3. Database configuration
 
-Recommended Configuration
--------------------------
+Most Rails applications will use SQLite or Postgres when in development mode. Apps using SQLite generally require no configuration.
 
-Use [bundler](http://bundler.io/) It offers more sophisticated gem management than just using rubygems and it ensures that gem versions are the same across all environments.
+You can configure the application to use your local database credentials in the `config/database.yml` file.
 
-Bundler creates a Gemfile and a Gemfile.lock file in the root of your project. For info on what these files are and how to use them
+### 4. Database setup
 
-Use [unicorn](http://unicorn.bogomips.org/) as your web server. You must use unicorn if you want to deploy your application to Heroku. Heroku offers [instructions](https://devcenter.heroku.com/articles/getting-started-with-rails4#webserver) on how to configure unicorn to work locally and to work on Heroku.
+You can set up the database by running:
 
-Use [RSpec](http://rspec.info/) for unit testing. Also, unit test your application.
+    bundle exec rake db:setup
 
-Use either [Cucumber](https://github.com/cucumber/cucumber) or [Steak](https://github.com/cavalle/steak) for acceptance testing. Also, acceptance test your application.
-
-Strongly Suggested Usage
-------------------------
-
-Rails by default comes with Haml templating. Haml tends to add more overhead and confusion than benefit. It's suggested to stick with erb for views.
-
-Deploy to Heroku
-----------------
-Heroku has a really good [guide](https://devcenter.heroku.com/articles/getting-started-with-rails4) to get your rails app deployed
+(This actually runs three separate commands — `db:create`, `db:migrate`, and `db:seed` which gets your database all setup.)
 
 
-Just for Your Information
--------------------------
-You can disable the asset pipeline when creating app via:
+### 5. Running the app
 
-    rails new myappname --skip-sprockets
-    
-Or, add in your `config/application.rb`:
+Lastly, you can run the app with:
 
-    config.assets.enabled = false
+    bundle exec rails s
 
-You must use the asset pipeline when deploying to heroku.
+Or if you want to access a console (REPL) for the app, you can run:
+
+    bundle exec rails c
+
+
+## Deploying to Heroku
+
+Heroku has a [really good guide to get your Rails app deployed](https://devcenter.heroku.com/articles/getting-started-with-rails4).
+
