@@ -19,7 +19,7 @@ Current Guides
 * [Build Tools](Build-Tools.md), for core software development tools Make and GCC needed by many downstream libraries and installation processes.
 * [Basic Shell Commands](Shell.md), for a set of essential commands to use on command line.
 * [Discussing Things Using GitHub Issues](Discuss-GitHub-Issues.md), a short video on how to use GitHub Issue for discussion (no coding needed!)
-* [How to make a good README](Good-README.md), a simple guide to making a good README file for your project.
+* [How to make a good README](Good-READMEs.md), a simple guide to making a good README file for your project.
 
 Future Guides
 -------------
