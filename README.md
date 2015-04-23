@@ -16,6 +16,7 @@ Current Guides
 * [Node.js](Node.js.md), for the Node server-side Javascript framework.
 * [Local PostgreSQL](PostgreSQL.md), for local installation of the open source object-relational database system.
 * [Jekyll](Jekyll.md), a static website builder that runs Github Pages.
+* [Persona](Persona.md), an identity service from Mozilla for building app login/logout.
 * [Build Tools](Build-Tools.md), for core software development tools Make and GCC needed by many downstream libraries and installation processes.
 * [Basic Shell Commands](Shell.md), for a set of essential commands to use on command line.
 * [Discussing Things Using GitHub Issues](Discuss-GitHub-Issues.md), a short video on how to use GitHub Issue for discussion (no coding needed!)
