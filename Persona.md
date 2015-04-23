@@ -66,6 +66,8 @@ More example code from Code for America projects:
   in [Python](https://github.com/codeforamerica/address-iq/blob/3a17c2334c2c7be5dc14e427f4d0908581cda7f0/app.py#L259),
   [PHP](https://github.com/codeforamerica/in-n-out/blob/1df95cb3e4f3f969af5a4fe4106b006355ba5f0e/public/api/v1/user.php#L69),
   and [Ruby](https://github.com/codeforamerica/engine-light/blob/d71dafa39555013385f6ed45d977269e1ebecd33/app/controllers/persona_controller.rb#L25).
+* Unit tests to check login
+  in [Python](https://github.com/codeforamerica/ceviche-cms/blob/0dccc6af019123ec1749a8bb86638fe3c05a1557/test/test.py#L1305).
 
 You can customize the login popup with custom colors (`backgroundColor`),
 your app name (`siteName`), and a logo (`siteLogo`), and other details by
