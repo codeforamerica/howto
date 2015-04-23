@@ -21,7 +21,6 @@ Code for America projects currently using Persona include
 [Oakland Answers](https://github.com/codeforamerica/oakland_answers),
 [Louisville Jail Dashboard](https://github.com/codeforamerica/in-n-out),
 [Long Beach AddressIQ](https://github.com/codeforamerica/address-iq),
-[Pittsburgh Template-Maker](https://github.com/codeforamerica/template-maker),
 and [Oakland RecordTrac](https://github.com/codeforamerica/recordtrac).
 
 ![Securing the Louisville Jail Dashboard](images/browserid-jail-dashboard.png)
