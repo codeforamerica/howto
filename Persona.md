@@ -1,7 +1,7 @@
-Mozilla BrowserID/Persona
-=========================
+Mozilla Persona
+===============
 
-Mozilla BrowserID, also called Persona, is an
+Mozilla Persona, also called BrowserID, is an
 [identity service for website login](https://login.persona.org/about):
 
 > Persona replaces multiple passwords.
@@ -23,7 +23,7 @@ Code for America projects currently using Persona include
 [Long Beach AddressIQ](https://github.com/codeforamerica/address-iq),
 and [Oakland RecordTrac](https://github.com/codeforamerica/recordtrac).
 
-![Securing the Louisville Jail Dashboard](images/browserid-jail-dashboard.png)
+![Securing the Louisville Jail Dashboard](images/persona-jail-dashboard.png)
 
 Using Persona
 -------------
