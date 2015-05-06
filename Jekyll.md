@@ -37,3 +37,8 @@ Build a site [using the `build` command](http://jekyllrb.com/docs/usage/):
 >     $ jekyll build --watch
 >     # => The current folder will be generated into ./_site,
 >     #    watched for changes, and regenerated automatically.
+
+Serve a site using the `serve` command:
+
+    jekyll serve
+    # Then open http://localhost:4000/
