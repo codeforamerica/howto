@@ -10,7 +10,7 @@ Is it done? Is it a prototype? Is it a zombie? Alpha, Beta, 1.1, etc. It's OK to
 ![Infinite Windmills](http://i.giphy.com/SIV3ijAwkNt9C.gif)
 
 #### Press
-Links to othe rpeople talking about your work.
+Links to other people talking about your work.
 
 ## Why
 A more in detail explanation for why this project exists. Tell us all about it.
