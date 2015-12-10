@@ -21,16 +21,52 @@ and the version that ships with your operating system may be older than the
 versions expected by current frameworks such as Rails. RVM helps bring your
 Ruby up to date.
 
-To install RVM with the latest version of Ruby:
+### Installing RVM
+
+To install RVM with the latest version of Ruby, use this shell command:
 
     $ curl -L https://get.rvm.io | bash -s stable --autolibs=enabled --ruby
  
 For more details, visit the [installation documentation](https://github.com/wayneeseguin/rvm#installation).
 
-After initial installation, check RVM’s output for additional instructions, e.g.:
+### Loading `rvm` into the shell
 
-> To start using RVM you need to run `source /home/nobody/.rvm/scripts/rvm`
-> in all your open shell windows, in rare cases you need to reopen all shell windows.
+To enable the use of `rvm` in your shell after installation, you need to source the `rvm` script. This can be done manually using 
+
+    source "$HOME/.rvm/scripts/rvm"
+
+or (recommended) you can place `source "$HOME/.rvm/scripts/rvm"` into a file named `.bashrc` or `.bash_profile`, which would automatically enable the use of `rvm` whenever you open a new shell window.
+
+### Using `rvm` to load a specific version of Ruby.
+
+Once the `rvm` script is loaded into your shell, you can use it to switch between versions of Ruby.
+
+#### Switch versions manually
+
+    # switch to Ruby 2.1.1
+    rvm use 2.1.1 
+
+#### Switch versions automatically
+
+With `rvm` loaded into your shell, `rvm` will automatically check the current directory for [files that suggest the use of particular versions of Ruby](https://rvm.io/workflow/projects#supported-files) whenever you `cd` into a new directory.
+
+If you clone an existing Ruby project, it will hopefully designate a Ruby version using a `.ruby-version`, `Gemfile`, or `.rvmrc` file.
+
+If you are starting your own Ruby project, it is recommended that you create a `.ruby-version` file containing only a single version number. For example, the full contents of `.ruby-version` could be:
+
+    2.1.7
+
+#### Install new versions of Ruby with `rvm`
+
+    rvm install 2.1.1
+
+#### View all your installed versions of Ruby
+
+    rvm list
+
+
+Speeding up the installation of Ruby gems
+-----------------------------------------
 
 To significantly speed up the installation of any Ruby gems you might be installing 
 (such as Rails), skip downloading of documentation for each gem by adding a global
@@ -39,15 +75,3 @@ configuration to the [.gemrc file](http://guides.rubygems.org/command-reference/
 
     $ echo "gem: --no-document" >> ~/.gemrc
 
-Ruby
-----
-
-### Mac & Ubuntu
-
-To install a given version of Ruby, run `rvm install desired_version`, e.g.:
-
-    $ rvm install 2.1.1
-
-If a Ruby project requires a specific version of Ruby, it will be described in the `Gemfile` with a line such as `ruby '2.1.1'`.
-
-You can view all your installed versions of Ruby with `rvm list` and switch to using a different version with, for example, `rvm use 2.1.1`.
