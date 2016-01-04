@@ -34,7 +34,7 @@ Install Virtualenv tools.
 
     $ sudo pip install virtualenv
 
-Change into your Python project directory (for example, “my-project”), then create a new virtual environment. Naming it `.venv` will create a hidden folder to contain the necessary files in.
+Change into your Python project directory (for example, “my-project”), then create a new virtual environment. Naming it `.venv` will create a hidden folder to contain the necessary files in. Using the `-p python3` flags will install Python3 instead of Python2.
 
     $ cd my-project
     $ virtualenv .venv
