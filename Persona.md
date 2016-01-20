@@ -1,6 +1,10 @@
 Mozilla Persona
 ===============
 
+# PERSONA IS BEING SHUT DOWN
+
+As of January 2016, [Persona is being shut down by Mozilla](https://mail.mozilla.org/pipermail/persona-notices/2016/000005.html), so it's no longer recommended for use on Code for America projects. Here are [Mozilla's Shutdown Guidelines](https://wiki.mozilla.org/Identity/Persona_Shutdown_Guidelines_for_Reliers) for people who rely on the service.
+
 Mozilla Persona, also called BrowserID, is an
 [identity service for website login](https://login.persona.org/about):
 
@@ -14,7 +18,7 @@ do with that knowledge: whether that user is allowed to see private data,
 or change data. Team Louisville used Persona in 2013 to secure their app,
 [read their extensive notes on our blog](http://www.codeforamerica.org/blog/2013/11/21/securing-the-louisville-app/).
 
-Mozilla Persona is our first choice for login features in an app. Its use
+Mozilla Persona is *(NO LONGER, SEE ABOVE)* our first choice for login features in an app. Its use
 is not mandated, but you should have a great reason not to.
 Code for America projects currently using Persona include
 [Engine Light](https://github.com/codeforamerica/engine-light),
@@ -73,3 +77,7 @@ You can customize the login popup with custom colors (`backgroundColor`),
 your app name (`siteName`), and a logo (`siteLogo`), and other details by
 passing options to `navigator.id.request()`.
 [Read more in Mozilla’s `IdentityManager.request()` documentation](https://developer.mozilla.org/en-US/docs/Web/API/IdentityManager/request).
+
+# PERSONA IS BEING SHUT DOWN
+
+As of January 2016, [Persona is being shut down by Mozilla](https://mail.mozilla.org/pipermail/persona-notices/2016/000005.html), so it's no longer recommended for use on Code for America projects. Here are [Mozilla's Shutdown Guidelines](https://wiki.mozilla.org/Identity/Persona_Shutdown_Guidelines_for_Reliers) for people who rely on the service.
