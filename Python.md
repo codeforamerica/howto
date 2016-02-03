@@ -10,7 +10,7 @@ Unless otherwise required use Python 3.5 and if multiple version of support are 
 
 Project Structure
 -----------------
-All projects should include README.md files with links to this document, Contributors.md with information about how to contribute and who is contributing, and a license file, MIT preferred.  Each project should have a requirements folder containing a app.txt file in the [requirement file format](https://pip.readthedocs.org/en/1.1/requirements.html) always pin requirements to and use projects which respect [semver](http://semver.org/).  Also including a dev.txt requirements file with developer tools can be helpful as well as operating system specific scripts.
+All projects should include README.md files with links to this document, Contributors.md with information about how to contribute and who is contributing, and a license file, MIT preferred.  Each project should have a requirements folder containing an app.txt file in the [requirement file format](https://pip.readthedocs.org/en/1.1/requirements.html) always pin requirements to and use projects which respect [semver](http://semver.org/).  Also including a dev.txt requirements file with developer tools can be helpful as well as operating system specific scripts.
 
 Application Structure
 ---------------------
