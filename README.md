@@ -21,6 +21,7 @@ Current Guides
 * [Basic Shell Commands](Shell.md), for a set of essential commands to use on command line.
 * [Discussing Things Using GitHub Issues](Discuss-GitHub-Issues.md), a short video on how to use GitHub Issue for discussion (no coding needed!)
 * [How to make a good README](Good-READMEs.md), a simple guide to making a good README file for your project.
+* [Writing good GitHub Issues](Good-GitHub-Issues.md), how to write good GitHub issues that are clear and accessible to new contributors.
 
 Future Guides
 -------------
