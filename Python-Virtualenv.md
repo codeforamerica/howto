@@ -57,10 +57,10 @@ Virtualenv is a tool that allows projects to have isolated environments on the s
 
 Once you have virtualenvwrapper installed you can start a new virtualenv like so
 
-> mkvirtualenv -p /usr/lib/python3 --no-site-packages project_name
+> mkvirtualenv -p `which python3` --no-site-packages project_name
 
 or if you have to use python 2
 
-> mkvirtualenv -p /usr/lib/python --no-site-packages project_name
+> mkvirtualenv -p `which python` --no-site-packages project_name
 
 The ``--no-site-packages`` option means that none of the system versions of your requirements will be used, which greatly decreases the risk of unexpected conflicts.
