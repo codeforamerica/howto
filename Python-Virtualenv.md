@@ -10,7 +10,7 @@ For comprehensive and up to date instructions for OSX installs look [here](http:
 To install ``python3``  on OSX use
 > brew install python3
 
-or if ``python3`` is not supported by a required library use python 2.7 
+or if ``python3`` is not supported by a required library use python 2.7
 
 > brew install python
 
@@ -30,7 +30,7 @@ To install Pip on a Mac OS, [follow the Pip installer instructions](http://www.p
 Install or Upgrade pip
 ----------------------
 
-To install or upgrade pip, securely download [get-pip.py](https://raw.github.com/pypa/pip/master/contrib/get-pip.py). [[1](http://www.pip-installer.org/en/latest/installing.html#id5)]
+To install or upgrade pip, securely download [get-pip.py](https://bootstrap.pypa.io/get-pip.py). [[1](http://www.pip-installer.org/en/latest/installing.html#id5)]
 
 Then run the following (which may require administrator access):
 
@@ -40,9 +40,9 @@ If setuptools (or distribute) is not already installed, get-pip.py will install 
 
 
 On Debian and Ubuntu:
- 
+
 >     $ sudo aptitude install python3-pip
- 
+
 
 On Fedora:
 
