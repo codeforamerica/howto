@@ -1,4 +1,4 @@
-Discussing Things on GitHub Issues
+Discussing Things on GitHub Issues 
 =============
 
 Click below for a short (5-minute) video tutorial on how to sign up and use GitHub Issues for discussion.
