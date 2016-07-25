@@ -1,3 +1,8 @@
+**This documentation is being deprecated!**
+Please update your links to [here](https://wiki.codeforamerica.org)
+Future changes will be made from [this github repository](https://github.com/codeforamerica/cfa-wiki)
+
+
 Python
 ======
 Python is a clear and powerful object-oriented programming language, comparable to Perl, Ruby, Scheme, or Java.  Its main focus is on readability and standards based approaches.

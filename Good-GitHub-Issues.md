@@ -1,3 +1,8 @@
+**This documentation is being deprecated!**
+Please update your links to [here](https://wiki.codeforamerica.org)
+Future changes will be made from [this github repository](https://github.com/codeforamerica/cfa-wiki)
+
+
 # Writing Good GitHub Issues
 
 GitHub issues are where dicussions about open source projects happen. Getting good at writing GitHub issues will get you more help building your projects as well as improve your practice of building open source.
