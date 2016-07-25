@@ -31,11 +31,13 @@ __Doctype:__ `<!doctype html>` is the right answer. Non-standard or missing doct
 CSS
 ----
 
+__Media Queries:__ IE 8 and below have no support for media queries (`@media screen and (max-width: 768px) {`). This would make mobile-responsive design nearly impossible were it not for a few crafy JS polyfills. Of the many available, [Respond.js](https://github.com/scottjehl/Respond) stands out for its small file size and fast performance, though it only reads the most common of media queries, so don't try anything too fancy.
+
 __Modernizr:__ This is the quintessential library for detecting CSS (and HTML and JS) features across all browsers, old and new. If you need to know if gradients or transforms are supported, this is how to do it.
 
 [CSS3Pie](http://css3pie.com/): This library magically polyfills many CSS3 features (e.g. `border-radius`, `box-shadow`) in old browsers, via some really crazy tricks. It's is *all kinds of dangerous,* especially if your site involves any animations at all, but it just might get you out of a tight spot once in a while. *Much* preferable is to design such that any CSS3 features you're taking advantage of degrade tolerably in old versions of IE.
 
-CSS Expressions: These are actually an old feature from IE 6-8 that allowed for dynamically-evaluated logic in stylesheets, not unlike what SASS and LESS now provide. This was removed in IE 9 and above. You're unlikely to see these in the wild, but they're included in this doc as something to be aware of.
+__CSS Expressions:__ These are actually an old feature from IE 6-8 that allowed for dynamically-evaluated logic in stylesheets, not unlike what SASS and LESS now provide. This was removed in IE 9 and above. You're unlikely to see these in the wild, but they're included in this doc as something to be aware of.
 
 
 JS
@@ -54,6 +56,12 @@ __Web Workers:__ These are quite simply missing from older browsers, and are non
 __Modernizr:__ This is the quintessential library for detecting JS (and HTML and CSS) features across all browsers, old and new. If you need to know if JSON or Flash is supported, this is how to do it.
 
 
+Other Oddities
+--------------
+
+__Concurrent HTTP Requests__: Modern browsers (IE8 and above) can maintain 6 (or sometimes more) open HTTP connections at a time. That means if you have 20 assets (JS, CSS, images) required to render your page, the first six will be requested as soon as those tags in the DOM are parsed, then when one of them finishes, the next in the queue will be requested. IE 6 and 7 have a *much* more restrictive limit of 2 concurrent HTTP connections. That means pages with large numbers of assets will take a very long time to load. AJAX requests are subject to this same limit, so watch out for situations where you might be hitting the server for a large number of AJAXy things.
+
+
 Testing
 -------
 
@@ -67,3 +75,5 @@ Tools
 [Modernizr](https://modernizr.com): Browser feature detection. If you only need a few features, you can create a custom build on the Modernizr website.
 
 [CSS3Pie](http://css3pie.com/): Polyfill for some CSS3 features in old browsers. Sometimes magic, sometimes a buggy nightmare. You have been warned.
+
+[Respond.js](https://github.com/scottjehl/Respond): Polyfill for @media queries on IE 8 and below.
