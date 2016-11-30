@@ -11,7 +11,7 @@ $ docker-machine create --driver virtualbox default
 
 # Add relevant environment variables to your shell
 # (if you don't use bash, replace with `.zshrc`, `.profile`, etc.
-$ cat 'eval $(docker-machine env)' >> ~/.bashrc && source ~/.bashrc
+$ echo 'eval $(docker-machine env)' >> ~/.bashrc && source ~/.bashrc
 
 # Open up port 3000 between the host and the virtualbox machine
 $ VBoxManage modifyvm "default" --natpf1 "guestnginx,tcp,,3000,,3000"
