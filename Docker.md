@@ -1,10 +1,20 @@
 Docker has instructions for installation on their site ([mac], [windows], [linux]).
 
-## Mac or Windows VM setup
+## Mac or Windows setup
 
 If you are running Docker for the first time on OS X or Windows,
-you'll need to [install docker-machine] and [VirtualBox],
-then create a virtual machine:
+you'll need to [install docker-machine] and [VirtualBox].
+On Mac, our recommended approach is through [homebrew].
+
+```bash
+brew install docker
+brew install docker-machine
+brew cask install virtualbox
+```
+
+[homebrew]: http://brew.sh/
+
+Once you have Docker installed, create a virtual machine:
 
 ```bash
 $ docker-machine create --driver virtualbox default
