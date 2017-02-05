@@ -1,3 +1,8 @@
+**This documentation is being deprecated!**
+Please update your links to [here](https://wiki.codeforamerica.org)
+Future changes will be made from [this github repository](https://github.com/codeforamerica/cfa-wiki)
+
+
 # Node.js
 Node.js (often simply called `node`) is a general purpose, server-side programming environment built on top of Google's V8 JavaScript engine. It employed non-blocking I/O, which allows it to be highly responsive and scalable.
 

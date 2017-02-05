@@ -1,3 +1,8 @@
+**This documentation is being deprecated!**
+Please update your links to [here](https://wiki.codeforamerica.org)
+Future changes will be made from [this github repository](https://github.com/codeforamerica/cfa-wiki)
+
+
 How To Do Things With Computers
 =====
 
