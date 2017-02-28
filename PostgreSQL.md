@@ -42,13 +42,22 @@ The new database will be available to your application. If your application requ
 
 ### Mac
 
-With Postgres.app, these commands will be located in a directory named `/Applications/Postgres.app/Contents/Versions/9.3/bin` (or similar, depending on the version number).
+#### Add commands to your `PATH`
+
+With Postgres.app, commands such as [`psql`](https://www.postgresql.org/docs/current/static/app-psql.html), [`createdb`](https://www.postgresql.org/docs/current/static/app-createdb.html), and [`dropdb`](https://www.postgresql.org/docs/current/static/app-dropdb.html) are located in a directory named `/Applications/Postgres.app/Contents/Versions/latest/bin` (in place of `latest` you path might contain a version number). If you add this folder to your `PATH` environmental variable, it will allow you to access these commands in your command line shell.
+
+```bash
+# in .bashrc, .bash_profile, or a similar file
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
+```
 
 You can connect to PostgreSQL easily using the Postgres.app elephant menu:
 
 ![Screen capture of Postgres.app elephant menu](images/Postgres.app.jpg)
 
-Then use [create user](http://www.postgresql.org/docs/9.0/static/sql-createuser.html) and [create database](http://www.postgresql.org/docs/9.0/static/sql-createdatabase.html) to generate the user:
+#### Creating users and databases
+
+If you need to create a new user account, use [create user](http://www.postgresql.org/docs/9.0/static/sql-createuser.html) and [create database](http://www.postgresql.org/docs/9.0/static/sql-createdatabase.html) to generate the user:
 
     # CREATE USER janedoe PASSWORD 'pass';
     # CREATE DATABASE doedb OWNER=janedoe;
