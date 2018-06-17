@@ -8,19 +8,24 @@ Python Install
 For comprehensive and up to date instructions for OSX installs look [here](http://docs.python-guide.org/en/latest/starting/install/osx/) but for simple cases the instructions below should help.
 
 To install ``python3``  on OSX use
-> brew install python3
+```
+brew install python3
+```
 
 or if ``python3`` is not supported by a required library use python 2.7
 
-> brew install python
+```
+brew install python
+```
 
 On Debian and Ubuntu
-
-> sudo aptitude install python3.5-dev
-
+```
+sudo aptitude install python3.5-dev
+```
 On Fedora
-
-> sudo yum install python3.5-dev
+```
+sudo yum install python3.5-dev
+```
 
 Pip
 ---
@@ -33,20 +38,21 @@ Install or Upgrade pip
 To install or upgrade pip, securely download [get-pip.py](https://bootstrap.pypa.io/get-pip.py). [[1](http://www.pip-installer.org/en/latest/installing.html#id5)]
 
 Then run the following (which may require administrator access):
-
->     $ python get-pip.py
-
+```
+$ python get-pip.py
+```
 If setuptools (or distribute) is not already installed, get-pip.py will install [setuptools](https://pypi.python.org/pypi/setuptools) for you. [[2](http://www.pip-installer.org/en/latest/installing.html#id6)]
 
 
 On Debian and Ubuntu:
-
->     $ sudo aptitude install python3-pip
-
+```
+$ sudo aptitude install python3-pip
+```
 
 On Fedora:
-
->     $ sudo yum install python3-pip
+```
+$ sudo yum install python3-pip
+```
 
 If you need to use python 2.7 just remove the 3 from the commands.
 
@@ -57,10 +63,13 @@ Virtualenv is a tool that allows projects to have isolated environments on the s
 
 Once you have virtualenvwrapper installed you can start a new virtualenv like so
 
-> mkvirtualenv -p `which python3` --no-site-packages project_name
-
+```
+$ mkvirtualenv -p `which python3` --no-site-packages project_name
+```
 or if you have to use python 2
 
-> mkvirtualenv -p `which python` --no-site-packages project_name
+```
+$ mkvirtualenv -p `which python` --no-site-packages project_name
+```
 
 The ``--no-site-packages`` option means that none of the system versions of your requirements will be used, which greatly decreases the risk of unexpected conflicts.
